@@ -1,8 +1,15 @@
-2015-01-04  Jeremy Bennett <jeremy@jeremybennett.com>
+2015-02-16  Peter Bennett  <peter@jeremybennett.com>
+
+	Extended to print the entire fuselage
+
+	* fuselage-1.scad (module tailplate): Created.
+	(module fuselage_1_untrimmed): Created.
+
+2015-01-04  Jeremy Bennett  <jeremy@jeremybennett.com>
 
 	* fuselage-1.scad: Created.
 
-2015-01-04  Jeremy Bennett <jeremy@jeremybennett.com>
+2015-01-04  Jeremy Bennett  <jeremy@jeremybennett.com>
 
 	Initial project files.
 
