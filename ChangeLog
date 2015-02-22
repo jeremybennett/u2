@@ -1,4 +1,9 @@
-2015-02-16  Peter Bennett  <peter@jeremybennett.com>
+2015-02-22  Jeremy Bennett  <jeremy@jeremybennett.com>
+
+	* wheel.scad: Rotate for printing, add license header
+	(wheel): Body of implementation as module.
+
+2015-02-21  Peter Bennett  <peter@jeremybennett.com>
 
 	* wheel.scad: Created.
 

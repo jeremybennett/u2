@@ -12,14 +12,23 @@
 // 45678901234567890123456789012345678901234567890123456789012345678901234567890
 
 
-difference() {
-	intersection() {
-   		     sphere(r = 10);
-      		 cube(size = [6,200,300], center = true);
+// A wheel with axle hole and four holes to reduce weight.
+
+// Implemented as a slice of a sphere
+module wheel ()
+	// Slide of sphere
+	difference() {
+		intersection() {
+			sphere(r = 10);
+			cube(size = [6,200,300], center = true);
 	}
+
+	// Central axle
 	rotate ([0,90,0])
 		translate([ 0, 0, -5])
 			cylinder(h = 10, d=2);
+
+	// Four weight reducing holes
 	rotate ([0,90,0])
 		translate([ 0, 5, -5])
 			cylinder(h = 10, d=6);
@@ -35,4 +44,9 @@ difference() {
 	rotate ([0,90,0])
 		translate([ -5, 0, -5])
 			cylinder(h = 10, d=6);
-	}
+}
+
+
+// Rotate for printing
+rotate (a = [0, 90, 0])
+	wheel ();
